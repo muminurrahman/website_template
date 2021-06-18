@@ -6,7 +6,7 @@ body {
 body {
 	display: flex;
 	flex-direction: column;
-    	min-width: 25em;
+	min-width: 25em;
 }
 
 main {
@@ -82,75 +82,77 @@ iframe {
 
 
 .navbar-brand {
-    color: #fff;
+	color: #fff;
 }
 
 .navbar-brand:hover {
-    color: #fff;
-    text-decoration: none;
+	color: #fff;
+	text-decoration: none;
 }
 
 .nav-link:hover {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .navbar {
-    background: #343A40;
+	background: #343A40;
 }
 
 .nav-link:hover {
-    transition: 0.4s;
+	transition: 0.4s;
 }
 
 .icon-bar {
-    width: 22px;
-    height: 2px;
-    background-color: #fff;
-    display: block;
-    margin: 6px auto;
-    transition: all 0.4s;
-    text-align: center;
-    justify-content: center;
+	width: 22px;
+	height: 2px;
+	background-color: #fff;
+	display: block;
+	margin: 6px auto;
+	transition: all 0.4s;
+	text-align: center;
+	justify-content: center;
 }
 
 .navbar-toggler {
-    border: none;
-    padding: 1px;
-    text-align: center;
-    justify-content: center;
+	border: none;
+	padding: 1px;
+	text-align: center;
+	justify-content: center;
 }
 
 .navbar-toggler:focus {
-    outline: none;
-    box-shadow: none;
+	outline: none;
+	box-shadow: none;
 }
+
 .navbar-toggler:focus-visible {
-   	outline: auto;
+	outline: auto;
 }
+
 .navbar-toggler .top-bar {
-    -webkit-transform: rotate(-45deg) translate(-5px, 6px);
-    transform: rotate(-45deg) translate(-5px, 6px);
+	-webkit-transform: rotate(-45deg) translate(-5px, 6px);
+	transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .navbar-toggler .middle-bar {
-    opacity: 0;
+	opacity: 0;
 }
 
 .navbar-toggler .bottom-bar {
-    -webkit-transform: rotate(45deg) translate(-5px, -6px);
-    transform: rotate(45deg) translate(-5px, -6px);
+	-webkit-transform: rotate(45deg) translate(-5px, -6px);
+	transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .navbar-toggler.collapsed .top-bar {
-    transform: rotate(0);
+	transform: rotate(0);
 }
 
 .navbar-toggler.collapsed .middle-bar {
-    opacity: 1;
+	opacity: 1;
 }
 
 .navbar-toggler.collapsed .bottom-bar {
-    transform: rotate(0);
+	transform: rotate(0);
 }
 
 
@@ -182,22 +184,23 @@ iframe {
 	border-color: #dfdfdf;
 	box-shadow: none;
 }
+
 .accordion-button:focus-visible {
-    z-index: 3;
-    outline: auto;
-    box-shadow: none;
+	z-index: 3;
+	outline: auto;
+	box-shadow: none;
 }
 
 .accordion-button:not(.collapsed) {
-    box-shadow: none;
+	box-shadow: none;
 	color: #000;
 	background: none;
 	text-decoration: underline;
 }
 
 .accordion-button:not(.collapsed)::after {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-    transform: rotate(180deg);
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+	transform: rotate(180deg);
 }
 
 .accordion-body {
@@ -205,68 +208,71 @@ iframe {
 	padding-left: 2.1875em;
 }
 
+footer > .navbar-brand {
+    margin: 0;
+}
 
 /******* BOOTSTRAP ICONS *******/
 
 
 .social-icons {
-    padding: 0;
+	padding: 0;
 }
 
 .social-icons li {
-    list-style-type: none;
-    text-decoration: none;
-    float: left;
-    margin: 0 7px 7px 0;
+	list-style-type: none;
+	text-decoration: none;
+	float: left;
+	margin: 0 7px 7px 0;
 }
 
 .bi {
-    display: block;
-    width: 45px;
-    height: 35px;
-    line-height: 35px;
-    text-align: center;
-    background: #444;
-    color: #fff;
+	display: block;
+	width: 45px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	background: #444;
+	color: #fff;
 	border-radius: 2px;
 }
 
 .bi:hover {
-    text-decoration: none;
-    color: #fff;
+	text-decoration: none;
+	color: #fff;
 }
 
 .bi-facebook:hover,
 .bi-facebook:focus {
-    background: #1877f2;
+	background: #1877f2;
 }
 
 .bi-instagram:hover,
 .bi-instagram:focus {
-    background: #125688;
-    background: linear-gradient(150deg, #405de6, #5851db, #833ab4, #c13584,
+	background: #125688;
+	background: linear-gradient(150deg, #405de6, #5851db, #833ab4, #c13584,
 		#e1306c, #fd1d1d, #f56040, #f77737, #fcaf45, #ffdc80);
 }
 
 .bi-twitter:hover,
 .bi-twitter:focus {
-    background: #1da0f2;
+	background: #1da0f2;
 }
 
 .bi-youtube:hover,
 .bi-youtube:focus {
-    background: #ff0000;
+	background: #ff0000;
 }
 
 .bi-linkedin:hover,
 .bi-linkedin:focus {
-    background: #0a66c2;
+	background: #0a66c2;
 }
 
 .bi-github:hover,
 .bi-github:focus {
-    background: #24292e;
+	background: #24292e;
 }
 .bi-github:focus {
-    background: #24292e;
+	background: #24292e;
 }
