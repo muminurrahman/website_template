@@ -5,21 +5,23 @@ document.addEventListener("DOMContentLoaded", function () {
     tags[i].addEventListener("click", function () {
       let collapseElement = document.querySelector('.navbar-collapse');
       if (collapseElement.classList.contains("show")) {
+        navbar_toggler.setAttribute('title', 'Expand');
+
         let bsCollapse = new bootstrap.Collapse(collapseElement, {
           toggle: true
         });
       }
     });
   }
-  
+
   let navbar_toggler = document.querySelector('.navbar-toggler');
+
   navbar_toggler.onclick = function() {myFunction()};
 
   function myFunction() {
-    if (navbar_toggler.classList.contains("collapsed")) {
+    if (navbar_toggler.classList.contains("collapsed"))
       navbar_toggler.setAttribute('title', 'Expand');
-    } else {
-      navbar_toggler.setAttribute('title', 'Collaspe');
-    }
-  }   
+    else if (!navbar_toggler.classList.contains("collapsed"))
+      navbar_toggler.setAttribute('title', 'Collapse');
+  }
 });
